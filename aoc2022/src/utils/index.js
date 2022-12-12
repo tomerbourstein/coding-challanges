@@ -23,15 +23,8 @@
  *     import { myUtil } from '../utils'
  */
 
-export function sum(array) {
-  const sumValue = array.reduce(
-    (accumulator, current) => accumulator + current,
-    0,
-  );
-  return sumValue;
-}
 
 export function sortDescending(array) {
-  const soretedArray = array.sort((a, b) => b - a);
+  const soretedArray = array.sort((a, b) => b.length - a.length);
   return soretedArray;
 }
